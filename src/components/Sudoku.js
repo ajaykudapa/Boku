@@ -94,7 +94,7 @@ export default function Sudoku() {
   const handleDifficultySelect = (level) => {
     setDifficulty(level);
     const holes = level === 'Easy' ? 30 : level === 'Medium' ? 39 : 48;
-    const startingHints = level === 'Easy' ? 19 : level === 'Medium' ? 2 : 4;
+    const startingHints = level === 'Easy' ? 1 : level === 'Medium' ? 2 : 4;
     generateGame(holes, startingHints);
   };
 
